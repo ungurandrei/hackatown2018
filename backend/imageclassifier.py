@@ -9,7 +9,7 @@ model = load_model('../number_model.h5')
 
 # For now, basic image classification test with MNIST data
 def classify_image_test():
-    img = cv2.imread('test_img4.png')
+    img = cv2.imread('../test_img4.png')
     img = cv2.bitwise_not(img)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = cv2.resize(img, (28, 28))

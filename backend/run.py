@@ -7,7 +7,6 @@ import math
 import operator
 import random
 import imageclassifier as imgc
-from PIL import Image
 
 app = create_app("development")
 
