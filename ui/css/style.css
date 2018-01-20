@@ -1,0 +1,47 @@
+body{
+  
+}
+
+#btn{
+  position:absolute;
+  top:55%;
+  left:10%;
+}
+
+#clr{
+  position:absolute;
+  top:55%;
+  left:15%;
+}
+
+#can{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border: 2px solid;
+}
+
+#eraser{
+  position:absolute;
+  top:20%;
+  left:43%;
+}
+
+#canvasimg{
+  position:absolute;
+  top:10%;
+  left:52%;
+  display:none;
+}
+
+#white{
+ position:absolute;
+  top:22%;
+  left:45%;
+  width:15px;
+  height:15px;
+  background:white;
+  border:2px solid;
+}
