@@ -3,30 +3,32 @@ body{
 }
 
 #btn{
-  position:absolute;
-  top:55%;
-  left:10%;
+
+}
+
+.jumbotron {
+    background-image: url("../hello-in-eight-different-languages.jpg");
+    background-size: contain;
+
 }
 
 #clr{
-  position:absolute;
-  top:55%;
-  left:15%;
+
 }
 
 #can{
   width: 400px;
   height: 400px;
-  position: absolute;
-  top: 10%;
-  left: 10%;
   border: 2px solid;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #eraser{
-  position:absolute;
-  top:20%;
-  left:43%;
+
 }
 
 #canvasimg{

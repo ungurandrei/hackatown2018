@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by  Andrei</title>
+  <title>Tourisme Intelligent</title>
   
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
@@ -15,18 +15,21 @@
 
 <body>
 
-  <div class="jumbotron text-center">Tourisme Intelligent</div>
+  <div class="jumbotron text-center"></div>
 
-<canvas id="can"></canvas>
-<div id="eraser">Eraser</div>
+<div id="content">
+    <div class="row"><canvas id="can"></canvas></div>
+    <div class="row">
+        <div class="col text-center">
+            <input type="button" class="button_wrapper" value="save" id="btn" size="30" onclick="save()">
+            <input type="button" class="button_wrapper" value="clear" id="clr" size="23" onclick="erase()">
+        </div>
+    </div>
 
 <img id="canvasimg">
 
-<input type="button" value="save" id="btn" size="30" onclick="save()">
 
-<input type="button" value="clear" id="clr" size="23" onclick="erase()">
-  
-  
+</div>
 
     <script  src="js/index.js"></script>
 
