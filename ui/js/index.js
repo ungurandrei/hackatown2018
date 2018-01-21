@@ -58,6 +58,15 @@ function draw() {
   ctx.closePath();
 }
 
+function showMainContent() {
+  content.style.display = 'block';
+  introduction.style.display = 'none';
+
+}
+
+
+
+
 function erase() {
   var m = confirm("Want to clear");
   if (m) {
@@ -72,6 +81,8 @@ function save() {
   document.getElementById("canvasimg").src = dataURL;
   document.getElementById("canvasimg").style.display = "inline";
 }
+
+
 
 function findxy(res, e) {
   if (res == "down") {
