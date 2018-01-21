@@ -25,7 +25,6 @@ def hello_world():
 def process_img():
     r = request
     img_base64 = r.data['data'].split(",")[1]
-    print(img_base64)
     img_data = base64.b64decode(img_base64)
     with open("image_from_ui.png", 'wb') as f:
         f.write(img_data)
