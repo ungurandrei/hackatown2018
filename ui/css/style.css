@@ -12,6 +12,10 @@ body{
 
 }
 
+h1{
+    margin-bottom: 50px;
+}
+
 #content{
     display: none;
 }
