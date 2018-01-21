@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Tourisme Intelligent</title>
-  
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <meta charset="UTF-8">
+    <title>Tourisme Intelligent</title>
 
-      <link rel="stylesheet" href="css/style.css">
 
-  
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="jumbotron text-center"></div>
 
-  <div class="jumbotron text-center"></div>
+    <div id="content">
+        <div class="row">
+            <canvas id="main_image"></canvas>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <input type="button" class="button_wrapper" value="Analyser" id="btn" size="30" onclick="analyze()">
+                <input type="button" class="button_wrapper" value="Effacer" id="clr" size="23" onclick="erase()">
+            </div>
+        </div>
 
-<div id="content">
-    <div class="row"><canvas id="can"></canvas></div>
-    <div class="row">
-        <div class="col text-center">
-            <input type="button" class="button_wrapper" value="save" id="btn" size="30" onclick="save()">
-            <input type="button" class="button_wrapper" value="clear" id="clr" size="23" onclick="erase()">
+        <div class="row">
+            <div class="col text-center">
+                <span>Interpretation: </span><span id="interpretation"></span> 
+            </div>
         </div>
     </div>
-
-<img id="canvasimg">
-
-
-</div>
-
-    <script  src="js/index.js"></script>
-
-
-
+    
+    <script src="js/index.js"></script>
 
 </body>
-
 </html>

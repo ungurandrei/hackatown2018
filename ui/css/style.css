@@ -16,9 +16,9 @@ body{
 
 }
 
-#can{
-  width: 400px;
-  height: 400px;
+#main_image{
+  width: 280px;
+  height: 280px;
   border: 2px solid;
   padding-left: 0;
   padding-right: 0;
