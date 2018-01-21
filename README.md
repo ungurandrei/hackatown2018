@@ -18,6 +18,8 @@ The main page for our app:
 Trying out some digits:
 ![alt text](ux-demo.gif "Textify UX Demo")
 
+The CNN visualized:
+![alt text](mnist_analysis_model.png "CNN Model")
 
 ## Running the app
 
