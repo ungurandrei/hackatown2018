@@ -49,6 +49,15 @@ function draw() {
   }
 }
 
+function showMainContent() {
+  content.style.display = 'block';
+  introduction.style.display = 'none';
+
+}
+
+
+
+
 function erase() {
   var m = confirm("Vous voulez effacer?");
   if (m) {
@@ -59,7 +68,22 @@ function erase() {
 function analyze() {
   document.getElementById("main_image").style.border = "2px solid";
   var dataURL = canvas.toDataURL();
+<<<<<<< HEAD
   console.log(dataURL);
+=======
+  document.getElementById("canvasimg").src = dataURL;
+  document.getElementById("canvasimg").style.display = "inline";
+}
+
+
+
+function findxy(res, e) {
+  if (res == "down") {
+    prevX = currX;
+    prevY = currY;
+    currX = e.clientX - canvas.offsetLeft;
+    currY = e.clientY - canvas.offsetTop;
+>>>>>>> 85c91a0b283a11b1ad833bfe1c9c0b62394e9450
 
   //This is gonna contain the output from the API
   document.getElementById('interpretation').innerHTML= 'asdasdasd';
