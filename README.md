@@ -28,3 +28,5 @@ Keras is crucial to make the back-end functional, as our CNN was built using Ker
 conda create --name tensorflow
 
 The environment.yml can be found in the root directory.
+
+**Note: We worked on this as part of Hackatown 2018. However, the CNN was built following a tutorial (linked in the Jupyter Notebook) which I had followed prior to the hackathon.**
