@@ -2,8 +2,27 @@ body{
   
 }
 
-#btn{
+.button_wrapper{
+  margin:5vh;
+  width: 200px;
+  height:50px;
+  border: 1px solid;
+  border-radius: 2px;
+  transition: 0.5s;
+}
 
+.button_wrapper:hover{
+  width:220px;
+  height:60px;
+  transition: 0.5s;
+}
+
+#enter{
+  background-color: #d1f8d1;
+}
+
+#delete{
+  background-color: #f5c4c4;
 }
 
 .jumbotron {
@@ -16,12 +35,33 @@ h1{
     margin-bottom: 50px;
 }
 
+#continue-button{
+  width: 500px;
+  height:50px;
+  margin-left:20%;
+  border: 1px solid black;
+  background: white;
+
+}
+
+#continue-button:hover{
+  background:lightgray;
+  transition: 0.4s;
+}
+
 #content{
     display: none;
+    opacity:0;
 }
 
 #clr{
 
+}
+
+#introduction{
+  margin-left: 20vw;
+  margin-right:20vw;
+  position: relative
 }
 
 #main_image{

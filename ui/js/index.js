@@ -1,3 +1,5 @@
+const transitionSpeed = 1000;
+
 var canvas = document.getElementById('main_image'),
   ctx = canvas.getContext('2d'),
   mouseX = 0,
@@ -49,10 +51,34 @@ function draw() {
 }
 
 function showMainContent() {
-  content = document.getElementById('content');
-  introduction = document.getElementById('introduction');
-  content.style.display = 'block';
-  introduction.style.display = 'none';
+  content = $('#content');
+  introduction = $('#introduction');
+  continue_button = $('#continue-button');
+
+  continue_button.animate({
+      'height':'0',
+      'font-size':'0'
+    },{
+      duration: transitionSpeed,
+      complete: function(){
+        introduction.animate({
+          'left':'-500vw'
+        },{
+          duration: transitionSpeed,
+          complete: function(){
+            content.show();
+            content.animate({
+              'opacity':'1'
+            },{
+              duration: transitionSpeed,
+              complete: function(){
+                content.show();
+              }
+            });
+          }
+      });
+    }
+  });
 }
 
 function erase() {
