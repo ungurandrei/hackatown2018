@@ -35,13 +35,6 @@ body{
 
 }
 
-#canvasimg{
-  position:absolute;
-  top:10%;
-  left:52%;
-  display:none;
-}
-
 #white{
  position:absolute;
   top:22%;

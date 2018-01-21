@@ -10,6 +10,8 @@ model = load_model('../number_model.h5')
 # For now, basic image classification test with MNIST data
 def classify_image_test():
     img = cv2.imread('../test_img4.png')
+    print("Image used:")
+    print(img)
     img = cv2.bitwise_not(img)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = cv2.resize(img, (28, 28))
@@ -22,7 +24,10 @@ def classify_image_test():
     return prediction
 
 #The real function we will use: the image will come from our front end
-def classify_image(img):
+def classify_image():
+    img = cv2.imread('image_from_ui.png')
+    print("Image used:")
+    print(img)
     img = cv2.bitwise_not(img)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = cv2.resize(img, (28, 28))

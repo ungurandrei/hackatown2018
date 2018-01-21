@@ -7,12 +7,11 @@ var canvas = document.getElementById('main_image'),
   colour = 'hotpink',
   mousedown = false;
 
+ctx.fillStyle = 'white';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 console.log("width: "+width);
 console.log("height: "+height);
-
-// resize the canvas
-canvas.width = width;
-canvas.height = height;
 
 var stroke_color = "black",
   stroke_width = 10;
@@ -60,6 +59,8 @@ function erase() {
   var m = confirm("Vous voulez effacer?");
   if (m) {
     ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
 }
 
@@ -67,7 +68,10 @@ function analyze() {
   document.getElementById("main_image").style.border = "2px solid";
   var dataURL = canvas.toDataURL();
   console.log(dataURL);
-
-  //This is gonna contain the output from the API
-  document.getElementById('interpretation').innerHTML= 'asdasdasd';
+  //Fire request to API with data URL
+  $.post( "http://127.0.0.1:5000/processimg",{'data':dataURL}, function( data ) {
+    api_response = data;
+    console.log(data);
+    document.getElementById('interpretation').innerHTML= api_response;
+  });
 }
