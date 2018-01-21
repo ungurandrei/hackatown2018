@@ -12,12 +12,15 @@ Moving forward, we would like to train our CNN with more data such as handwritte
 
 ## In Action!
 
-The main page for our app:
+### The main page for our app:
 ![alt text](ui-demo.gif "Textify UI Demo")
 
-Trying out some digits:
+### Trying out some digits:
 ![alt text](ux-demo.gif "Textify UX Demo")
 
+### The CNN visualized:
+
+![alt text](mnist_analysis_model.png "CNN Model")
 
 ## Running the app
 
@@ -28,3 +31,5 @@ Keras is crucial to make the back-end functional, as our CNN was built using Ker
 conda create --name tensorflow
 
 The environment.yml can be found in the root directory.
+
+**Note: We worked on this as part of Hackatown 2018. However, the CNN was built following a tutorial (linked in the Jupyter Notebook) which I had followed prior to the hackathon.**
