@@ -4,10 +4,13 @@ var canvas = document.getElementById('main_image'),
   ctx = canvas.getContext('2d'),
   mouseX = 0,
   mouseY = 0,
-  width = canvas.width,
-  height = canvas.height,
+  width = 280,
+  height = 280,
   colour = 'hotpink',
   mousedown = false;
+
+canvas.width = width;
+canvas.height = height;
 
 ctx.fillStyle = 'white';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -16,7 +19,7 @@ console.log("width: "+width);
 console.log("height: "+height);
 
 var stroke_color = "black",
-  stroke_width = 10;
+  stroke_width = 15;
 
 
 canvas.addEventListener('mousemove', function (event) {
