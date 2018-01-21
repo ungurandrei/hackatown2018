@@ -82,12 +82,10 @@ function showMainContent() {
 }
 
 function erase() {
-  var m = confirm("Vous voulez effacer?");
-  if (m) {
-    ctx.clearRect(0, 0, width, height);
-    ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-  }
+  ctx.clearRect(0, 0, width, height);
+  ctx.fillStyle = 'white';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  document.getElementById('interpretation').innerHTML= "";
 }
 
 function analyze() {
